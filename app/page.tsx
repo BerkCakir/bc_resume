@@ -1,6 +1,6 @@
 "use client";
 
-import { Linkedin, Mail, Database, Code2, Server, MapPin, Cloud, Github as Git, Brain, TestTube } from "lucide-react";
+import { Linkedin, Mail, Database, Code2, Server, MapPin, Cloud, Github as Git, Brain, TestTube, GraduationCap, Briefcase } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -64,7 +64,6 @@ export default function Home() {
                 <Badge variant="secondary">WPF</Badge>
                 <Badge variant="secondary">HTML</Badge>
                 <Badge variant="secondary">CSS</Badge>
-                <Badge variant="secondary">DevExpress</Badge>
               </div>
             </CardContent>
           </Card>
@@ -82,7 +81,6 @@ export default function Home() {
                 <Badge variant="secondary">PostgreSQL</Badge>
                 <Badge variant="secondary">MongoDB</Badge>
                 <Badge variant="secondary">Redis</Badge>
-                <Badge variant="secondary">SSRS</Badge>
               </div>
             </CardContent>
           </Card>
@@ -156,51 +154,116 @@ export default function Home() {
                 <Badge variant="secondary">Kafka</Badge>
                 <Badge variant="secondary">RabbitMQ</Badge>
                 <Badge variant="secondary">Hangfire</Badge>
+                <Badge variant="secondary">DevExpress</Badge>
+                <Badge variant="secondary">SQL Server Reporting Services</Badge>
               </div>
             </CardContent>
           </Card>
         </div>
       </section>
 
-      {/* Projects Section */}
+      {/* Professional Experience Section */}
       <section className="container mx-auto px-4 py-20">
-        <h2 className="text-3xl font-bold text-center mb-12">Featured Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <h2 className="text-3xl font-bold text-center mb-12">Professional Experience</h2>
+        <div className="space-y-4 max-w-3xl mx-auto">
           <Card>
             <CardHeader>
-              <CardTitle>Enterprise Resource Planning System</CardTitle>
+              <div className="flex items-start gap-2">
+                <Briefcase className="h-5 w-5 mt-1" />
+                <div className="flex-1">
+                  <div className="flex flex-col md:flex-row md:items-center justify-between">
+                    <span className="font-semibold">ICT Group</span>
+                    <span className="text-muted-foreground">03.2022 - Present</span>
+                  </div>
+                  <span className="text-sm text-muted-foreground">Eindhoven, the Netherlands</span>
+                  <div className="mt-4 space-y-2">
+                    <div className="pl-4 border-l-2 border-muted">
+                      <div className="flex flex-col md:flex-row md:items-center justify-between">
+                        <span className="text-sm">Laborie</span>
+                        <span className="text-sm text-muted-foreground">03.2024 - 12.2024</span>
+                      </div>
+                      <span className="text-sm text-muted-foreground">Enschede, the Netherlands</span>
+                    </div>
+                    <div className="pl-4 border-l-2 border-muted">
+                      <div className="flex flex-col md:flex-row md:items-center justify-between">
+                        <span className="text-sm">Vanderlande</span>
+                        <span className="text-sm text-muted-foreground">03.2022 - 02.2024</span>
+                      </div>
+                      <span className="text-sm text-muted-foreground">Veghel, the Netherlands</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </CardHeader>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <div className="flex items-start gap-2">
+                <Briefcase className="h-5 w-5 mt-1" />
+                <div className="flex-1">
+                  <div className="flex flex-col md:flex-row md:items-center justify-between">
+                    <span className="font-semibold">Dogus Technology</span>
+                    <span className="text-muted-foreground">11.2014 - 02.2022</span>
+                  </div>
+                  <span className="text-sm text-muted-foreground">Istanbul, Türkiye</span>
+                </div>
+              </div>
+            </CardHeader>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <div className="flex items-start gap-2">
+                <Briefcase className="h-5 w-5 mt-1" />
+                <div className="flex-1">
+                  <div className="flex flex-col md:flex-row md:items-center justify-between">
+                    <span className="font-semibold">Garanti Technology</span>
+                    <span className="text-muted-foreground">10.2008 - 01.2014</span>
+                  </div>
+                  <span className="text-sm text-muted-foreground">Istanbul, Türkiye</span>
+                </div>
+              </div>
+            </CardHeader>
+          </Card>
+        </div>
+      </section>
+
+      {/* Education Section */}
+      <section className="container mx-auto px-4 py-20">
+        <h2 className="text-3xl font-bold text-center mb-12">Education</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <GraduationCap className="h-5 w-5" />
+                <div>
+                  <div>Bachelor's Degree in Computer Science</div>
+                  <div className="text-sm text-muted-foreground">2003-2008</div>
+                </div>
+              </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground mb-4">
-                Led the development of a comprehensive ERP system using .NET Core,
-                SQL Server, and Azure services. Implemented microservices architecture
-                and handled complex business logic.
+              <p className="text-muted-foreground">
+                Middle East Technical University, Ankara, Türkiye
               </p>
-              <div className="flex gap-2 flex-wrap">
-                <Badge>.NET Core</Badge>
-                <Badge>SQL Server</Badge>
-                <Badge>Azure</Badge>
-                <Badge>Microservices</Badge>
-              </div>
             </CardContent>
           </Card>
 
           <Card>
             <CardHeader>
-              <CardTitle>Financial Management Platform</CardTitle>
+              <CardTitle className="flex items-center gap-2">
+                <GraduationCap className="h-5 w-5" />
+                <div>
+                  <div>Master of Business Administration</div>
+                  <div className="text-sm text-muted-foreground">2009-2012</div>
+                </div>
+              </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground mb-4">
-                Designed and implemented a secure financial management platform with
-                real-time reporting capabilities using ASP.NET Core, Entity Framework,
-                and SQL Server.
+              <p className="text-muted-foreground">
+                Bilgi University, Istanbul, Türkiye
               </p>
-              <div className="flex gap-2 flex-wrap">
-                <Badge>ASP.NET Core</Badge>
-                <Badge>Entity Framework</Badge>
-                <Badge>SQL Server</Badge>
-                <Badge>Azure AD</Badge>
-              </div>
             </CardContent>
           </Card>
         </div>
