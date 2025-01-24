@@ -18,7 +18,7 @@ export default function Home() {
             <MapPin className="h-4 w-4" />
             <span>Geldrop, the Netherlands</span>
           </div>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-base text-muted-foreground">
             Senior Software Engineer with over 15 years of experience specializing in .NET technologies and 
             enterprise-level software development. Proven track record in designing and implementing large-scale 
             solutions, particularly in healthcare, logistics and supply chain management domains. Expertise in 
@@ -51,7 +51,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <Card>
             <CardHeader>
-              <CardTitle className="flex items-center gap-2">
+              <CardTitle className="flex items-center gap-2 text-lg">
                 <Code2 className="h-5 w-5" />
                 Core Technologies
               </CardTitle>
@@ -70,7 +70,7 @@ export default function Home() {
 
           <Card>
             <CardHeader>
-              <CardTitle className="flex items-center gap-2">
+              <CardTitle className="flex items-center gap-2 text-lg">
                 <Database className="h-5 w-5" />
                 Data & Storage
               </CardTitle>
@@ -87,7 +87,7 @@ export default function Home() {
 
           <Card>
             <CardHeader>
-              <CardTitle className="flex items-center gap-2">
+              <CardTitle className="flex items-center gap-2 text-lg">
                 <Server className="h-5 w-5" />
                 Infrastructure & DevOps
               </CardTitle>
@@ -105,12 +105,12 @@ export default function Home() {
 
           <Card>
             <CardHeader>
-              <CardTitle className="flex items-center gap-2">
+              <CardTitle className="flex items-center gap-2 text-lg">
                 <Brain className="h-5 w-5" />
                 Architecture & Patterns
               </CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="pt-0">
               <div className="flex flex-wrap gap-2">
                 <Badge variant="secondary">REST</Badge>
                 <Badge variant="secondary">Web Services</Badge>
@@ -123,12 +123,12 @@ export default function Home() {
 
           <Card>
             <CardHeader>
-              <CardTitle className="flex items-center gap-2">
+              <CardTitle className="flex items-center gap-2 text-lg">
                 <TestTube className="h-5 w-5" />
                 Testing & Quality
               </CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="pt-0">
               <div className="flex flex-wrap gap-2">
                 <Badge variant="secondary">MS Test</Badge>
                 <Badge variant="secondary">NUnit</Badge>
@@ -141,19 +141,18 @@ export default function Home() {
 
           <Card>
             <CardHeader>
-              <CardTitle className="flex items-center gap-2">
+              <CardTitle className="flex items-center gap-2 text-lg">
                 <Git className="h-5 w-5" />
                 Tools & Integration
               </CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="pt-0">
               <div className="flex flex-wrap gap-2">
                 <Badge variant="secondary">Git</Badge>
                 <Badge variant="secondary">BitBucket</Badge>
                 <Badge variant="secondary">Jira</Badge>
                 <Badge variant="secondary">Kafka</Badge>
                 <Badge variant="secondary">RabbitMQ</Badge>
-                <Badge variant="secondary">Hangfire</Badge>
                 <Badge variant="secondary">DevExpress</Badge>
                 <Badge variant="secondary">SQL Server Reporting Services</Badge>
               </div>
@@ -172,24 +171,24 @@ export default function Home() {
                 <Briefcase className="h-5 w-5 mt-1" />
                 <div className="flex-1">
                   <div className="flex flex-col md:flex-row md:items-center justify-between">
-                    <span className="font-semibold">ICT Group</span>
-                    <span className="text-muted-foreground">03.2022 - Present</span>
+                    <span className="text-lg font-semibold">ICT Group</span>
+                    <span className="text-base text-muted-foreground">03.2022 - Present</span>
                   </div>
-                  <span className="text-sm text-muted-foreground">Eindhoven, the Netherlands</span>
+                  <span className="text-base text-muted-foreground">Eindhoven, the Netherlands</span>
                   <div className="mt-4 space-y-2">
                     <div className="pl-4 border-l-2 border-muted">
                       <div className="flex flex-col md:flex-row md:items-center justify-between">
-                        <span className="text-sm">Laborie</span>
-                        <span className="text-sm text-muted-foreground">03.2024 - 12.2024</span>
+                        <span className="text-base">Laborie</span>
+                        <span className="text-base text-muted-foreground">03.2024 - 12.2024</span>
                       </div>
-                      <span className="text-sm text-muted-foreground">Enschede, the Netherlands</span>
+                      <span className="text-base text-muted-foreground">Enschede, the Netherlands</span>
                     </div>
                     <div className="pl-4 border-l-2 border-muted">
                       <div className="flex flex-col md:flex-row md:items-center justify-between">
-                        <span className="text-sm">Vanderlande</span>
-                        <span className="text-sm text-muted-foreground">03.2022 - 02.2024</span>
+                        <span className="text-base">Vanderlande</span>
+                        <span className="text-base text-muted-foreground">03.2022 - 02.2024</span>
                       </div>
-                      <span className="text-sm text-muted-foreground">Veghel, the Netherlands</span>
+                      <span className="text-base text-muted-foreground">Veghel, the Netherlands</span>
                     </div>
                   </div>
                 </div>
@@ -203,10 +202,10 @@ export default function Home() {
                 <Briefcase className="h-5 w-5 mt-1" />
                 <div className="flex-1">
                   <div className="flex flex-col md:flex-row md:items-center justify-between">
-                    <span className="font-semibold">Dogus Technology</span>
-                    <span className="text-muted-foreground">11.2014 - 02.2022</span>
+                    <span className="text-lg font-semibold">Dogus Technology</span>
+                    <span className="text-base text-muted-foreground">11.2014 - 02.2022</span>
                   </div>
-                  <span className="text-sm text-muted-foreground">Istanbul, Türkiye</span>
+                  <span className="text-base text-muted-foreground">Istanbul, Türkiye</span>
                 </div>
               </div>
             </CardHeader>
@@ -218,10 +217,10 @@ export default function Home() {
                 <Briefcase className="h-5 w-5 mt-1" />
                 <div className="flex-1">
                   <div className="flex flex-col md:flex-row md:items-center justify-between">
-                    <span className="font-semibold">Garanti Technology</span>
-                    <span className="text-muted-foreground">10.2008 - 01.2014</span>
+                    <span className="text-lg font-semibold">Garanti Technology</span>
+                    <span className="text-base text-muted-foreground">10.2008 - 01.2014</span>
                   </div>
-                  <span className="text-sm text-muted-foreground">Istanbul, Türkiye</span>
+                  <span className="text-base text-muted-foreground">Istanbul, Türkiye</span>
                 </div>
               </div>
             </CardHeader>
@@ -230,38 +229,42 @@ export default function Home() {
       </section>
 
       {/* Education Section */}
-      <section className="container mx-auto px-4 py-20">
-        <h2 className="text-3xl font-bold text-center mb-12">Education</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+      <section className="container mx-auto px-4 py-12">
+        <h2 className="text-3xl font-bold text-center mb-8">Education</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <GraduationCap className="h-5 w-5" />
-                <div>
-                  <div>Bachelor's Degree in Computer Science</div>
-                  <div className="text-sm text-muted-foreground">2003-2008</div>
+            <CardHeader className="pb-3">
+              <CardTitle>
+                <div className="flex items-start gap-2">
+                  <GraduationCap className="h-5 w-5 mt-1.5" />
+                  <div className="flex-1">
+                    <div className="text-lg">Bachelor's Degree in Computer Science</div>
+                    <div className="text-base text-muted-foreground">2003-2008</div>
+                  </div>
                 </div>
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground">
+              <p className="text-base text-muted-foreground">
                 Middle East Technical University, Ankara, Türkiye
               </p>
             </CardContent>
           </Card>
 
           <Card>
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <GraduationCap className="h-5 w-5" />
-                <div>
-                  <div>Master of Business Administration</div>
-                  <div className="text-sm text-muted-foreground">2009-2012</div>
+            <CardHeader className="pb-3">
+              <CardTitle>
+                <div className="flex items-start gap-2">
+                  <GraduationCap className="h-5 w-5 mt-1.5" />
+                  <div className="flex-1">
+                    <div className="text-lg">Master of Business Administration</div>
+                    <div className="text-base text-muted-foreground">2009-2012</div>
+                  </div>
                 </div>
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground">
+              <p className="text-base text-muted-foreground">
                 Bilgi University, Istanbul, Türkiye
               </p>
             </CardContent>
